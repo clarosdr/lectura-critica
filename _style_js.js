@@ -47,49 +47,70 @@ var myTheme = {
 				this.innerHTML+=' <span>&#9658;</span>';
 			}
 		);
-	},
+	},	
     hideMenu : function(){
         $("#siteNav").hide();
-        $("#toggle-nav").removeClass("hide-nav").addClass("show-nav").attr("title",$exe_i18n.show).find("span").html($exe_i18n.menu);
-        $("#main-wrapper").addClass("no-nav");
+        $(document.body).addClass("no-nav");
+        myTheme.params("add");
+        $("#toggle-nav").attr("class","show-nav").attr("title",$exe_i18n.show);
     },
     toggleMenu : function(e){
-        var n = $("#siteNav");
-        var mw = $("#main-wrapper");
-        if (n.is(":visible")) {
-            n.hide();
-            mw.addClass("no-nav");
-            $(e).removeClass("hide-nav").addClass("show-nav").attr("title",$exe_i18n.show).find("span").html($exe_i18n.menu);
+        if (typeof(myTheme.isToggling)=='undefined') myTheme.isToggling = false;
+        if (myTheme.isToggling) return false;
+        
+        var l = $("#toggle-nav");
+        
+        if (!e && $(window).width()<900 && l.css("display")!='none') return false; // No reset in mobile view
+        if (!e) l.attr("class","show-nav").attr("title",$exe_i18n.show); // Reset
+        
+        myTheme.isToggling = true;
+        
+        if (l.attr("class")=='hide-nav') {       
+            l.attr("class","show-nav").attr("title",$exe_i18n.show);
+			$("#siteFooter").hide();
+			$("#siteNav").slideUp(400,function(){
+                $(document.body).addClass("no-nav");
+                $("#siteFooter").show();
+                myTheme.isToggling = false;
+            }); 
             myTheme.params("add");
         } else {
-            n.show();
-            mw.removeClass("no-nav");
-            $(e).removeClass("show-nav").addClass("hide-nav").attr("title",$exe_i18n.hide).find("span").html($exe_i18n.menu);
-            myTheme.params("remove");
+            l.attr("class","hide-nav").attr("title",$exe_i18n.hide);
+            $(document.body).removeClass("no-nav");
+			$("#siteNav").slideDown(400,function(){
+                myTheme.isToggling = false;
+            });
+            myTheme.params("delete");            
+        }
+        
+    },
+    param : function(e,act) {
+        if (act=="add") {
+            var ref = e.href;
+            var con = "?";
+            if (ref.indexOf(".html?")!=-1 || ref.indexOf(".htm?")!=-1) con = "&";
+            var param = "nav=false";
+            if (ref.indexOf(param)==-1) {
+                ref += con+param;
+                e.href = ref;                    
+            }            
+        } else {
+            // This will remove all params
+            var ref = e.href;
+            ref = ref.split("?");
+            e.href = ref[0];
         }
     },
-	param : function(e,act) {
-		var hr = e.href;
-		var param = "nav=false";
-		if (act=="add") {
-			if (hr.indexOf("?")!=-1) {
-				if (hr.indexOf(param)==-1) e.href = hr + "&" + param;
-			} else {
-				e.href = hr + "?" + param;
-			}
-		} else {
-			e.href = hr.replace("&"+param,"").replace("?"+param,"");
-		}
-	},
-	params : function(act){
-		var as = $("#siteNav a, #topPagination a, #bottomPagination a");
-		as.each(function(){
-			myTheme.param(this,act);
-		});
-	}
+    params : function(act){
+        $("A",".pagination").each(function(){
+            myTheme.param(this,act);
+        });
+    }    
 }
 
 $(function(){
-	myTheme.init();
-	myTheme.setIcons();
+    if ($("body").hasClass("exe-web-site")) {
+        myTheme.init();
+    }
+    myTheme.setIcons(document.body.className);
 });
