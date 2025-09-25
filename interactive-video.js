@@ -202,13 +202,13 @@ var interaction = {
 	},
 	showEvaluationIcon: function (state,score) {
 		var $header = $('.exe-interactive-video').parents('article').find('header.iDevice_header'),
-			icon = 'exequextsq.png',
+			icon = '/lectura-critica/exequextsq.png',
 			alt = interaction.i18n.msgUncompletedActivity;
 		if (state == 1) {
-			icon = 'exequextrerrors.png';
+			icon = '/lectura-critica/exequextrerrors.png';
 			alt = interaction.i18n.msgUnsuccessfulActivity.replace('%s', score);
 		} else if (state == 2) {
-			icon = 'exequexthits.png';
+			icon = '/lectura-critica/exequexthits.png';
 			alt = interaction.i18n.msgSuccessfulActivity.replace('%s', score);
 		}
 		$('#interactiveEvaluationIcon').remove();

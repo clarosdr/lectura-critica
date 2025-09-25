@@ -34,7 +34,7 @@ a{color:#771F35}
 
 /* iDevices */
 .iDevice{margin:20px 0 30px 0}
-.iDevice_header{letter-spacing:.5px;height:auto!important;height:60px;min-height:60px;border:#60c29e solid;border-width:8px 8px 0 8px;padding-left:13px;border-top-left-radius:15px;border-top-right-radius:15px;background:#7ca2d7 url(_style_idevice_header.gif) repeat-x 0 bottom;position:static;background-image:none!important}
+.iDevice_header{letter-spacing:.5px;height:auto!important;height:60px;min-height:60px;border:#60c29e solid;border-width:8px 8px 0 8px;padding-left:13px;border-top-left-radius:15px;border-top-right-radius:15px;background:#7ca2d7 url(/lectura-critica/_style_idevice_header.gif) repeat-x 0 bottom;position:static;background-image:none!important}
 .iDeviceTitle{height:auto!important;height:30px;min-height:30px;line-height:30px;font-size:1.3em;vertical-align:bottom;top:auto;display:inline-block;font-weight:700;padding:15px 45px 15px 130px;background-repeat:no-repeat;background-position:0 50%;margin:0;color:#FFF}
 .iDevice_header_noIcon .iDeviceTitle{background-image:none;padding-left:20px}
 .iDevice_inner{padding:10px 20px 20px 20px;border:8px solid #60c29e;border-bottom-right-radius:15px;border-bottom-left-radius:15px;border-top:0;background-color:#f9fffc}
@@ -46,7 +46,7 @@ a{color:#771F35}
 /* Hide/Show iDevice */
 .toggle-idevice{display:block;margin:0;text-align:right}
 .iDevice_header .toggle-idevice{line-height:25px;position:absolute;top:53px;right:8px}
-.toggle-idevice a{display:inline-block;width:25px;height:25px;background:url(_style_icons.png) no-repeat 0 -200px;outline:none}
+.toggle-idevice a{display:inline-block;width:25px;height:25px;background:url(/lectura-critica/_style_icons.png) no-repeat 0 -200px;outline:none}
 .toggle-em0 a{background-position:0 -300px}
 .toggle-idevice .show-idevice{background-position:-100px -200px}
 .toggle-em0 .show-idevice{background-position:-100px -300px}
@@ -122,21 +122,21 @@ text-shadow:0 1px 1px rgba(255, 255, 255, 0.75)
 .TrueFalseIdevice .feedback{margin-top:1.5em}   
 
 /* Icons */
-.iDeviceTitle{background-image:url(icon_attached.png)}
+.iDeviceTitle{background-image:url(/lectura-critica/icon_attached.png)}
 .ListaIdevice .iDeviceTitle,
 .QuizTestIdevice .iDeviceTitle,
 .MultichoiceIdevice .iDeviceTitle,
 .TrueFalseIdevice .iDeviceTitle,
 .MultiSelectIdevice .iDeviceTitle,
-.ClozeIdevice .iDeviceTitle{background-image:url(icon_write.png)}
-.CasestudyIdevice .iDeviceTitle{background-image:url(icon_tool.png)}
-.preknowledgeIdevice .iDeviceTitle{background-image:url(icon_cabinet.png)}
-.GalleryIdevice .iDeviceTitle{background-image:url(icon_picture.png)}
-.objectivesIdevice .iDeviceTitle{background-image:url(icon_objective.png)}
-.ReflectionIdevice .iDeviceTitle{background-image:url(icon_reflection.png)}
-.readingIdevice .iDeviceTitle{background-image:url(icon_reading.png)}
-.activityIdevice .iDeviceTitle{background-image:url(icon_task.png)}
-.WikipediaIdevice .iDeviceTitle{background-image:url(icon_wikipedia.png)}
+.ClozeIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_write.png)}
+.CasestudyIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_tool.png)}
+.preknowledgeIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_cabinet.png)}
+.GalleryIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_picture.png)}
+.objectivesIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_objective.png)}
+.ReflectionIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_reflection.png)}
+.readingIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_reading.png)}
+.activityIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_task.png)}
+.WikipediaIdevice .iDeviceTitle{background-image:url(/lectura-critica/icon_wikipedia.png)}
 
 .js .em_iDevice{position:relative;padding-top:10px}
 .icon_wrapper{width:120px;height:120px;background-repeat:no-repeat;position:absolute;top:0;left:20px}

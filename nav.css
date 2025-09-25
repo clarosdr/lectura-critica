@@ -1,8 +1,16 @@
 /* Kids Style for eXeLearning (see config.xml for details) */
 body{padding:0;text-align:center;background:#aee7d3}
 #content{width:100%;margin:0 auto;text-align:left;position:relative;background-color:#aee7d3;overflow:auto}
-#main-wrapper{width:100%;*width:auto}/* * IE 6 & 7 */
-#main{padding:20px 40px 30px 320px;height:auto!important;height:200px;min-height:200px;*padding-left:0}
+#main-wrapper {
+    width: 100%;
+    width: auto;
+} /* * IE 6 & 7 */
+#main {
+    padding: 20px 40px 30px 320px;
+    height: auto !important;
+    min-height: 200px;
+    padding-left: 0\9; /* IE8 and below */
+}
 
 .no-nav #main{padding:20px 40px 0 40px}
 
@@ -55,7 +63,7 @@ h1#nodeTitle{font-weight:700;color:#1B4D3B}
 .pagination{padding:20px 0}
 .pagination .sep{display:none}
 .pagination a span,#topPagination .page-counter{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
-.pagination a{display:block;float:left;width:71px;height:71px;padding:0;background:url(_style_icons.png) no-repeat 0 0;margin-right:40px}
+.pagination a{display:block;float:left;width:71px;height:71px;padding:0;background:url(/lectura-critica/_style_icons.png) no-repeat 0 0;margin-right:40px}
 .pagination a:hover,.pagination a:focus{background-position:0 -100px}
 .pagination .next{background-position:-100px 0}
 .pagination .next:hover,.pagination .next:focus{background-position:-100px -100px}

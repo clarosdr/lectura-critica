@@ -328,10 +328,10 @@ var $eXeRelaciona = {
                               <div class="RLCP-EText" style="display:${txtV}; width:${txtW}; color:${color}; background-color:${bkcolor};">${card.eText}</div>    
                               <div class="RLCP-ImageContain" style="display:${imgV}; width:${imgW};">
                                   <img src="${card.url}" class="RLCP-Image" data-url="${card.url}" data-x="${card.x}" data-y="${card.y}" alt="${card.alt}" />
-                                  <div class="RLCP-Author RLCP-AuthorWord" data-author="${card.author}"  style="display: ${author};" alt="${card.author}" title="${mOptions.msgs.msgAuthor + ": " + $eXeRelaciona.clearHtml(card.author)}"><img src="${$eXeRelaciona.idevicePath}exequextcopyright.png"  /></div>
+                                  <div class="RLCP-Author RLCP-AuthorWord" data-author="${card.author}"  style="display: ${author};" alt="${card.author}" title="${mOptions.msgs.msgAuthor + ": " + $eXeRelaciona.clearHtml(card.author)}"><img src="${$eXeRelaciona.idevicePath}/lectura-critica/exequextcopyright.png"  /></div>
                               </div>
                             </div>
-                            <div style="display:${audio}" data-audio="${card.audio}" class="RLCP-TAudio ${audioCls}"  title="Audio"><img src="${$eXeRelaciona.idevicePath}exequextplayaudio.svg" class="RLCP-Audio"  alt="Audio"></div>
+                            <div style="display:${audio}" data-audio="${card.audio}" class="RLCP-TAudio ${audioCls}"  title="Audio"><img src="${$eXeRelaciona.idevicePath}/lectura-critica/exequextplayaudio.svg" class="RLCP-Audio"  alt="Audio"></div>
                         </div>`);
       $("#rlcContainerWords-" + instance).append(wordDiv);
     });
@@ -351,11 +351,11 @@ var $eXeRelaciona = {
                                 <div class="RLCP-ContainerData">
                                   <div class="RLCP-ImageContain" style="display:${imgV}; width:${imgW};">
                                     <img src="${card.urlBk}" class="RLCP-Image" data-url="${card.urlBk}" data-x="${card.x}" data-y="${card.y}" alt="${card.altBk}" />
-                                    <div class="RLCP-Author RLCP-AuthorDef" style="display: ${author};" data-author="${card.authorBk}" alt="${card.authorBk}" title="${mOptions.msgs.msgAuthor + ": " + $eXeRelaciona.clearHtml(card.authorBk)}"><img src="${$eXeRelaciona.idevicePath}exequextcopyright.png"  /></div>
+                                    <div class="RLCP-Author RLCP-AuthorDef" style="display: ${author};" data-author="${card.authorBk}" alt="${card.authorBk}" title="${mOptions.msgs.msgAuthor + ": " + $eXeRelaciona.clearHtml(card.authorBk)}"><img src="${$eXeRelaciona.idevicePath}/lectura-critica/exequextcopyright.png"  /></div>
                                   </div>
                                   <div class="RLCP-EText" style="display:${txtV}; width:${txtW}; color:${color}; background-color:${bkcolor};">${card.eTextBk}</div>
                                 </div>
-                              <div data-audio="${card.audioBk}" style="display:${audio}" class="RLCP-TAudio ${audioCls}"  title="Audio"><img src="${$eXeRelaciona.idevicePath}exequextplayaudio.svg" class="FLCDSP-RLCP"  alt="Audio"></div>
+                              <div data-audio="${card.audioBk}" style="display:${audio}" class="RLCP-TAudio ${audioCls}"  title="Audio"><img src="${$eXeRelaciona.idevicePath}/lectura-critica/exequextplayaudio.svg" class="FLCDSP-RLCP"  alt="Audio"></div>
                             </div>`);
       $("#rlcContainerDefinitions-" + instance).append(definitionDiv);
     });
@@ -749,13 +749,13 @@ var $eXeRelaciona = {
     var $header = $("#rlcGameContainer-" + instance)
       .parents("article")
       .find("header.iDevice_header");
-    var icon = "exequextsq.png",
+    var icon = "/lectura-critica/exequextsq.png",
       alt = mOptions.msgs.msgUncompletedActivity;
     if (state == 1) {
-      icon = "exequextrerrors.png";
+      icon = "/lectura-critica/exequextrerrors.png";
       alt = mOptions.msgs.msgUnsuccessfulActivity.replace('%s',score);
     } else if (state == 2) {
-      icon = "exequexthits.png";
+      icon = "/lectura-critica/exequexthits.png";
       alt = mOptions.msgs.msgSuccessfulActivity.replace('%s',score);
     }
     $("#rlcEvaluationIcon-" + instance).remove();

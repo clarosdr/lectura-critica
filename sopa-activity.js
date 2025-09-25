@@ -308,7 +308,7 @@ var $eXeSopa = {
             html = '';
         html += '<div class="SPP-MainContainer" id="sopaMainContainer">\
         <div class="SPP-GameMinimize" id="sopaGameMinimize">\
-            <a href="#" class="SPP-LinkMaximize" id="sopaLinkMaximize" title="' + msgs.msgMaximize + '"><img src="' + path + "sopaIcon.svg" + '" class="SPP-IconMinimize SPP-Activo"  alt="">\
+            <a href="#" class="SPP-LinkMaximize" id="sopaLinkMaximize" title="' + msgs.msgMaximize + '"><img src="' + path + "/lectura-critica/sopaIcon.svg" + '" class="SPP-IconMinimize SPP-Activo"  alt="">\
             <div class="SPP-MessageMaximize" id="sopaMessageMaximize"></div></a>\
         </div>\
         <div class="SPP-GameContainer" id="sopaGameContainer">\
@@ -342,7 +342,7 @@ var $eXeSopa = {
                 <p class="SPP-PShowClue SPP-parpadea" id="sopaPShowClue"></p>\
            </div>\
            <div class="SPP-Flex" id="sopaDivImgHome">\
-                <img src="' + path + "sopaIcon.svg" + '" class="SPP-ImagesHome" id="sopaPHome"  alt="' + msgs.msgNoImage + '" />\
+                <img src="' + path + "/lectura-critica/sopaIcon.svg" + '" class="SPP-ImagesHome" id="sopaPHome"  alt="' + msgs.msgNoImage + '" />\
            </div>\
            <div class="SPP-StartGame"><a href="#" id="sopaStartGame">' + msgs.msgPlayStart + '</a></div>\
            <div class="SPP-Message" id="sopaMessage"></div>\
@@ -617,14 +617,14 @@ var $eXeSopa = {
     showEvaluationIcon: function (state, score) {
         var mOptions = $eXeSopa.options;
         var $header = $('#sopaGameContainer').parents('article').find('header.iDevice_header');
-        var icon = 'exequextsq.png',
+        var icon = '/lectura-critica/exequextsq.png',
             alt = mOptions.msgs.msgUncompletedActivity;
         if (state == 1) {
-            icon = 'exequextrerrors.png';
+            icon = '/lectura-critica/exequextrerrors.png';
             alt = mOptions.msgs.msgUnsuccessfulActivity.replace('%s', score);
 
         } else if (state == 2) {
-            icon = 'exequexthits.png';
+            icon = '/lectura-critica/exequexthits.png';
             alt = mOptions.msgs.msgSuccessfulActivity.replace('%s', score);
         }
         $('#sopaEvaluationIcon').remove();

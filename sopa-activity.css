@@ -179,7 +179,7 @@
 .SPP-LinkAudioD {
 	position: absolute;
 	display: block;
-	background-image: url(sopaaudio.svg);
+	background-image: url(/lectura-critica/sopaimage.svg);
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -575,44 +575,44 @@
 
 
 .SPP-Cubierta .exeQuextIcons-Submit {
-	background: url(exequextreply.png) no-repeat;
+	background: url(/lectura-critica/exequextreply.png) no-repeat;
 	background-size: 100% 100%;
 	height: 1.7em;
 	width: 1.7em;
 }
 .SPP-MainContainer .exeQuextIcons-CWGame {
-	background-image: url(mapacerrarventana.svg);
+	background-image: url(/lectura-critica/mapacerrarventana.svg);
 	background-size: 100% 100%;
 }
 
 .SPP-GameContainer .exeQuextIcons-Minimize {
-	background-image: url(exequextmin.png);
+	background-image: url(/lectura-critica/exequextmin.png);
 	background-size: 100% 100%;
 }
 
 .SPP-GameContainer .exeQuextIcons-Hit {
-	background-image: url(exequexthits.png);
+	background-image: url(/lectura-critica/exequexthits.png);
 	background-size: 100% 100%;
 }
 
 .SPP-GameContainer .exeQuextIcons-FullScreen {
-	background-image: url(exequextfull.png);
+	background-image: url(/lectura-critica/exequextfull.png);
 	background-size: 100% 100%;
 }
 
 
 .SPP-GameContainer .exeQuextIcons-Score {
-	background-image: url(exequextscore.png);
+	background-image: url(/lectura-critica/exequextscore.png);
 	background-size: 100% 100%;
 }
 
 .SPP-GameContainer .exeQuextIcons-Time {
-	background-image: url(exequexttime.png);
+	background-image: url(/lectura-critica/exequexttime.png);
 	background-size: 100% 100%;
 }
 
 .SPP-GameContainer .exeQuextIcons-Number {
-	background-image: url(exequextnumber.png);
+	background-image: url(/lectura-critica/exequextnumber.png);
 	background-size: 100% 100%;
 }
 
@@ -644,17 +644,17 @@
 /* Full Screen */
 
 div:fullscreen .exeQuextIcons-FullScreen {
-	background-image: url(exequextnormal.png);
+	background-image: url(/lectura-critica/exequextnormal.png);
 	background-size: 100% 100%;
 }
 
 div:-webkit-full-screen .exeQuextIcons-FullScreen {
-	background: url(exequextnormal.png);
+	background: url(/lectura-critica/exequextnormal.png);
 	background-size: 100% 100%;
 }
 
 div:-moz-full-screen .exeQuextIcons-FullScreen {
-	background: url(exequextnormal.png);
+	background: url(/lectura-critica/exequextnormal.png);
 	background-size: 100% 100%;
 }
 
@@ -1131,12 +1131,12 @@ div:fullscreen .SPP-LinkMinimize{
 }
 
 .SopaIcon-Image {
-	background: url(sopaimage.svg) no-repeat;
+	background: url(/lectura-critica/sopaimage.svg) no-repeat;
 	background-size: 100% 100%;
 }
 
 .SopaIcon-Audio {
-	background: url(sopaaudio.svg) no-repeat;
+	background: url(/lectura-critica/sopaaudio.svg) no-repeat;
 	background-size: 100% 100%;
 }
 
